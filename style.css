@@ -1,0 +1,10 @@
+.item{
+   margin-left: 1050px;
+   position: fixed;
+   top: 6px; 
+}
+.container{
+   margin-left: 1110px;
+   display: flex;
+   /* position:fixed; */
+}

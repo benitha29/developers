@@ -1,0 +1,23 @@
+ .item{
+   margin-left: 1000px;
+   position: fixed;
+   top: 20px; 
+    /* color: white;  */
+   justify-content: space-between;
+
+
+}
+.logoos{
+   top: 30px;
+}
+.container{
+   margin-left: 1110px;
+   display: flex;
+   justify-content: center;
+   position:fixed; 
+}
+
+.footer{
+  margin-left: 1010px;
+} 
+

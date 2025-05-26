@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    text-align: center;
+    margin-top: 100px;
+}
+
+h2{
+    text-align: center;
+    margin-top: 100px;
+}
+.container button{
+    background: darkslategrey;
+} 
+
+    </style>
+</head>
+<body>
+
+   
+<body>
+
+    <h2>BLOG</h2>
+    <div class="container">
+    <!-- <textarea id="text" placeholder="write here message" rows="5"></textarea><br><br> -->
+     <textarea name="" id="text" placeholder="write here" rows="5"></textarea><br><br>
+    <button onclick="add()">Post</button>
+<button onclick="delt()">Delete</button>
+</div>
+<p id="pp"></p>
+<script src="/js/blogs.js"></script>
+    <script> 
+        function add(){
+            var text = document.getElementById("text").value;
+            var p = document.getElementById("pp");
+            p.innerHTML += "<p>" + text + "</p>";
+            document.getElementById("text").value = "";
+        }
+        function delt(){
+            var p = document.getElementById("pp");
+            p.innerHTML = "";
+        }
+    </script> 
+</body>
+</html>

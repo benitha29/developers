@@ -10,7 +10,7 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         errorMsg.textContent = "";
         window.location.href = "homes.html";
         // window.localStorage.setItem("useremail", useremail);
-        // window.localStorage.setItem("password", password);
+
         
     } else {
         errorMsg.textContent = "Invalid useremail or password.";

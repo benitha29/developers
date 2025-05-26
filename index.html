@@ -4,16 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<>, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+       body {
+      background-color: #222;
+      color: aliceblue;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    #loader-spinner {
+      display: none;
+      margin: 20px auto;
+    }
+
+    #style {
+      width: 40px;
+      height: 40px;
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+
+    button {
+      background-color: rgb(252, 247, 247);
+      color: rgb(124, 129, 129);
+      cursor: pointer;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    </style>
+</style>
 </head>
 <body>
+    <div class="count">
+        <h1>Welcome to Our deep developers</h1>
+    </div>
+
+    <div id="loader-span">
+        <div id="style">
+<button onclick="enter()" id="button">Continue</button>
+        </div>
+    </div>
+
     
-    <h1>hello</h1>
-    <p>welcome to our website</p>
-    <button id="go">enjoy</button>
+    
     <script>
-        document.getElementById("go").addEventListener("click",function(){
-            window.location.href = "../page/homes.html";    
-        })
+         window.addEventListener('load', function () {
+      document.getElementById('loader-spinner').style.display = 'block';
+    });
+
+    function enter() {
+      const button = document.getElementById('button');
+      const loader = document.getElementById('style');
+
+      loader.style.display = 'block';  
+      button.disabled = true;          
+
+      
+      setTimeout(function () {
+        window.location.href = "../developer-lion-king/page/home.html";
+      }, 5000); 
+    }
+
+</script>
     </script>
 </body>
 </html>

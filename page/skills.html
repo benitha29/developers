@@ -35,6 +35,51 @@ footer{
     text-align: center;
     margin-top: 150px;
 }
+@media (max-width: 1200px) {
+    .highlight {
+        margin-left: 0;
+        position: static;
+        display: flex;
+        justify-content: center;
+        top: 0;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .items {
+        margin-top: 40px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+    .highlight {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+    nav a {
+        padding: 8px 0;
+        display: block;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .items {
+        margin-top: 30px;
+        align-items: center;
+    }
+    footer {
+        margin-top: 60px;
+        font-size: 14px;
+    }
+}
     </style>
 </head>
 <body>
@@ -46,7 +91,7 @@ footer{
             <a href="about.html">About</a>
              <a href="contact.html">Contact</a> 
             <a href="skills.html">Skills</a>
-            <a href="./login.html">Login</a>
+            <a href="login.html">Login</a>
             <a href="blogs.html">Blog</a>
             
 
@@ -59,14 +104,13 @@ footer{
     <div class="container">
         <div class="items">
 
-
+ <!-- <img src="../assets/image/Screenshot 2025-05-08 071617.png" width="100" height="100"> -->
   <img src="../assets/image/Screenshot 2025-05-08 071617.png" width="100" height="100">
 <p>Cascanding </p>
 <p>Style</p>
 <p> Sheets</p>
 </div>
 <div class="items">
-<!-- <img src="c:\Users\user\Pictures\Screenshots\Screenshot 2025-05-08 071600.png"  width="100" height="100"> -->
  <img src="../assets/image/Screenshot 2025-05-08 071600.png" width="100" height="100">
 <p>Javascript</p>
 <p>language</p>

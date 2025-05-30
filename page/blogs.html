@@ -37,6 +37,55 @@ h2{
 .container button{
     background: darkslategrey;
 } 
+@media (max-width: 1200px) {
+    .contexte {
+        margin-left: 0;
+        right: 20px;
+        left: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .contexte {
+        position: static;
+        margin: 20px 0 0 0;
+        text-align: center;
+        display: block;
+    }
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+        padding: 8px 0;
+    }
+    .container, h2 {
+        margin-top: 40px;
+    }
+    .container textarea {
+        width: 90%;
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+    .container textarea {
+        width: 98%;
+        height: 120px;
+        font-size: 1em;
+    }
+    .container button {
+        width: 48%;
+        margin: 4px 1%;
+        font-size: 1em;
+    }
+    h2 {
+        font-size: 1.3em;
+        margin-top: 20px;
+    }
+}
 
     </style>
 </head>

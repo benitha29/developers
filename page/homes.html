@@ -32,9 +32,73 @@
         }
 
         footer{
-            margin-top: 10px;
+            margin-top: 100px;
             text-align: center;
-        }   
+        } 
+        @media (max-width: 1200px) {
+            .contexte, main img {
+                margin-left: 0;
+                position: static;
+                display: block;
+                text-align: center;
+            }
+            main img {
+                margin: 20px auto;
+                display: block;
+            }
+            main p {
+                top: 0;
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header img {
+                display: block;
+                margin: 0 auto;
+            }
+            .contexte {
+                margin: 10px 0 0 0;
+                text-align: center;
+                position: static;
+                display: block;
+            }
+            nav a {
+                display: inline-block;
+                margin: 5px 2px;
+                padding: 8px 12px;
+                font-size: 16px;
+            }
+            main img {
+                width: 90vw;
+                height: auto;
+                margin: 20px auto;
+            }
+            main p {
+                font-size: 18px;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                display: block;
+                margin: 8px 0;
+                padding: 10px 0;
+                font-size: 16px;
+            }
+            main img {
+                width: 100%;
+                height: auto;
+            }
+            main p {
+                font-size: 16px;
+            }
+            footer p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
